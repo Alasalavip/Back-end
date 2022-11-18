@@ -21,11 +21,10 @@ class contenedor{
     }
 
     //agregar productos
-    save = async(title,price,thumbnail) =>{
+    save = async(title,price) =>{
         let producto = {
             title: title,
             price: price,
-            thumbnail: thumbnail
         }
         let stock = await this.getAll();
         try {
